@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #403F3F;
+  --color-secondary: #0000FF;
+}
+
+.hide-on-xs { display: none !important; }
+@media (min-width: 576px) {
+  .hide-on-xs { display: inline-block !important; } 
+}
